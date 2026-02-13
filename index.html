@@ -1,45 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>For You ❤️</title>
+    <title>For My Secret Soul ❤️</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             text-align: center;
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', sans-serif;
             background: linear-gradient(to right, #ff758c, #ff7eb3);
-            overflow: hidden;
             color: white;
+            overflow-x: hidden;
         }
 
         h1 {
-            margin-top: 120px;
-            font-size: 40px;
+            margin-top: 80px;
+            font-size: 42px;
         }
 
         p {
-            font-size: 22px;
+            width: 80%;
+            margin: 25px auto;
+            font-size: 20px;
+            line-height: 1.6;
         }
 
-        button {
-            padding: 12px 25px;
-            font-size: 18px;
-            border: none;
-            border-radius: 25px;
-            background: white;
-            color: #ff4d6d;
-            cursor: pointer;
-            margin-top: 20px;
-        }
-
-        button:hover {
-            background: #ff4d6d;
-            color: white;
+        img {
+            width: 250px;
+            border-radius: 20px;
+            margin-top: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         }
 
         .heart {
-            position: absolute;
+            position: fixed;
+            bottom: -10px;
             color: red;
             font-size: 20px;
             animation: float 6s linear infinite;
@@ -47,24 +42,33 @@
 
         @keyframes float {
             0% { transform: translateY(0); opacity: 1; }
-            100% { transform: translateY(-800px); opacity: 0; }
+            100% { transform: translateY(-100vh); opacity: 0; }
         }
     </style>
 </head>
 
 <body>
 
-    <h1>Hi My sanjai ❤️</h1>
-    <p>Your happiness is my happiness 🥰</p>
-    <p>This page is just to make you smile 💕</p>
+    <h1>My Secret Soul ❤️</h1>
 
-    <button onclick="showMessage()">Click Me 💖</button>
+    <!-- Photo -->
+    <img src="Bae.png" alt="Our Photo">
 
+    <!-- Valentine Message -->
+    <p>
+        Heyyyyyyy fradu.... Ena neraiya kasata paduthitana intha konja naal la.... Sorry da thangoo.... 
+        Naaun intentional ah panala en mind romba switch agite Iruku atha... Apadi lan una vitutu poga matan... 
+        Santhosa padatha.... Love you so much Sanjai ♥️🫂 <br><br>
+        Happy Valentine’s Day
+    </p>
+
+    <!-- Background Music -->
+    <audio autoplay loop>
+        <source src="Secret Soul.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Floating Hearts Script -->
     <script>
-        function showMessage() {
-            alert("You mean a lot to me ❤️");
-        }
-
         function createHeart() {
             const heart = document.createElement("div");
             heart.classList.add("heart");
